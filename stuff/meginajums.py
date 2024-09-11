@@ -1,1 +1,0 @@
-f = open("C:\Users\User\Documents\mcbas\Programmesana-12klase-1-11.09.2024\stuff")

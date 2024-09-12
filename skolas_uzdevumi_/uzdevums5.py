@@ -1,4 +1,3 @@
-atbiled = str("y")
 atbilde = str(input("Gribi atkārtot programmu?y/n---"))
 while atbilde == str("y") :
     atbilde = str(input("Gribi atkārtot programmu?y/n---"))

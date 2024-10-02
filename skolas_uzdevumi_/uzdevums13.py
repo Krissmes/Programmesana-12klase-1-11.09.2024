@@ -22,44 +22,45 @@ def uzdevums1(vards,uzvards,vecums,dzivosanasVieta,milakaisPrieksmets):
     time.sleep(1)
     print("Mans mīļākais priekšmets ir", milakaisPrieksmets)
 
-def uzdevums2():
+def uzdevums2(cenaArPvn):
     pvn = 0.79
-    cenaArPvn = int(input('Cik maksāja pirkums?'))
+    # cenaArPvn = int(input('Cik maksāja pirkums?'))
     cenaBezPvn = pvn*cenaArPvn
     print("Jūsu cena bez pvn ir", cenaBezPvn )
-def uzdevums3():
+def uzdevums3(yearUser):
     yearNow = 2024
-    yearUser = int(input("Kurā gadā esi dzimis?"))
+    # yearUser = int(input("Kurā gadā esi dzimis?"))
     if yearNow - yearUser > 18:
         print("Tevi ir vairāk par 18 gadiem. Nice!")
     else:
         print("Tevi ir 18 vai mazāk gadu. Ir vēl kur augt.")
 def uzdevums4():
     "yes"
-def uzdevums5():
-    atbilde = str(input("Gribi atkārtot programmu?y/n---"))
+def uzdevums5(atbilde):
+    # atbilde = str(input("Gribi atkārtot programmu?y/n---"))
     while atbilde == str("y") :
-        atbilde = str(input("Gribi atkārtot programmu?y/n---"))
+        # atbilde = str(input("Gribi atkārtot programmu?y/n---"))
+        print("nebeigsu stradat")
     if atbilde == str("n"):
         print("Ok, beigšu strādāt.")
     else :
         print("Es nesadarbojos ar cilvēkiem, kas nemāk rakstīt.")
-def uzdevums6():
+def uzdevums6(atbilde):
     
     uzminamais = random.randint(1,10)
-    atbilde = int(input("Uzmini ciparu no 1-10?"))
+    # atbilde = int(input("Uzmini ciparu no 1-10?"))
     while uzminamais != atbilde:
         if uzminamais > atbilde:
             print("Cipars ir lielāks")
-            atbilde = int(input("Uzmini ciparu no 1-10?"))
+            # atbilde = int(input("Uzmini ciparu no 1-10?"))
         if uzminamais < atbilde:
             print("Cipars ir mazāks")
-            atbilde = int(input("Uzmini ciparu no 1-10?"))
+            # atbilde = int(input("Uzmini ciparu no 1-10?"))
     if uzminamais == atbilde:
         print("Tu uzminēji, cipars bija", uzminamais)
 
-def uzdevums7():
-    dalamais = int(input("Ievadi skaitli no 1-100 un es tev pateikšu visus skaitļus ar ko viņš dalās."))
+def uzdevums7(dalamais):
+    # dalamais = int(input("Ievadi skaitli no 1-100 un es tev pateikšu visus skaitļus ar ko viņš dalās."))
     dalitajs = 1
     while dalitajs != 101:
         if dalamais % dalitajs == 0:
@@ -67,9 +68,9 @@ def uzdevums7():
             dalitajs +=1
         else:
             dalitajs +=1
-def uzdevums8():
-    vards = input("izvēlies vārdu.")
-    burts = input("izvēlies burtu un es pateikšu cik daudz tas burts ir iekšā tajā vārdā.")
+def uzdevums8(vards, burts):
+    # vards = input("izvēlies vārdu.")
+    # burts = input("izvēlies burtu un es pateikšu cik daudz tas burts ir iekšā tajā vārdā.")
     skaits=0
     for x in vards:
         if x == burts:
@@ -84,14 +85,25 @@ def uzdevums9():
             summa += x
     print(summa)
 def uzdevums10():
-    "fibonaci"
+    x = 0
+    y = 1
+    z = 1
+    summa = 0
+    while z <= int(4000000):
+        z = x + y
+        x = y
+        y = z
+        print(summa)
+        if z % 2 == 0:
+                summa += z
+    print(summa)
 def uzdevums11():
     visiBurti= "abcdefghijklmnopqrstuvwxyz"
     for y in visiBurti:
         for x in visiBurti:
             print (y,x)
-def uzdevums12():
-    n = int(input())
+def uzdevums12(n):
+    # n = int(input())
     atbilde = 2**n
     print(atbilde)
-uzdevums1("hellp","hello","18","riga","matematika")
+

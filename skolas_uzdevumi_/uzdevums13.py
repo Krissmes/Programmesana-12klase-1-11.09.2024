@@ -107,3 +107,4 @@ def uzdevums12(n):
     atbilde = 2**n
     print(atbilde)
 
+uzdevums2(20)
